@@ -3,8 +3,6 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const https = require('https');
 
-// const apiID ='9ca61a5250d645a58a5115845202709';
-
 // const url = 'https://api.weatherapi.com/v1/forecast.json?key='+apiID+'&q='+cityName+'&days=5';
 
 const app = express();
