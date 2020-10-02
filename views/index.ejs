@@ -1,0 +1,108 @@
+<%- include("partials/head") -%>
+<nav class="navbar navbar-light bg-dark">
+  <a class="navbar-brand" href="#">Weather App</a>
+  <form class="form-inline" action="/" method="post">
+    <input class="form-control mr-sm-2" name="cityName" id="cityName" placeholder="Input City" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+<section id="Main" class="container-fluid main">
+
+
+  <div class="left">
+    <h4 id="now"></h4>
+    <div class="upper">
+      <div class="right-elem">
+        <div class="elem_box">
+          <p class="heading">Location</p>
+          <p>- - -</p>
+        </div>
+        <div class="elem_box">
+          <p class="heading">Description</p>
+          <p>- - -</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="lower">
+      <div class="l_box">
+        <p class="heading">Temp</p>
+        <p>- - -</p>
+      </div>
+      <div class="l_box">
+        <p class="heading">Feels-Like</p>
+        <p>- - -</p>
+      </div>
+      <div class="l_box">
+        <p class="heading">Humidity</p>
+        <p>- - -</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="right">
+    <div class="r_div">
+      <h5 id="date"></h5>
+      <div class="r_day day1">
+        <div class="">
+          <p class="heading">Temp</p>
+          <p>- - -</p>
+        </div>
+        <div class="m_ele">
+          <p class="heading">Feels Like</p>
+          <p>- - -</p>
+        </div>
+        <div class="">
+          <p class="heading">Humidity</p>
+          <p>- - -</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="r_div">
+      <h5 id="date2"></h5>
+      <div class="r_day day2">
+        <div class="">
+          <p class="heading">Temp</p>
+          <p>- - -</p>
+        </div>
+        <div class="m_ele">
+          <p class="heading"> Feels Like</p>
+          <p>- - -</p>
+        </div>
+        <div class="">
+          <p class="heading">Humidity</p>
+          <p>- - -</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="r_div">
+      <h5 id="date3"></h5>
+      <div class="r_day day3">
+        <div class="">
+          <p class="heading">Temp</p>
+          <p>- - -</p>
+        </div>
+        <div class="m_ele">
+          <p class="heading"> Feels Like</p>
+          <p>- - -</p>
+        </div>
+        <div class="">
+          <p class="heading">Humidity</p>
+          <p>- - -</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<%- include("partials/footer") -%>

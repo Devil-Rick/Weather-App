@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-variant: small-caps;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-size: 1.8rem;
+}
+
+.day {
+  --colour: #000;
+  --bg: linear-gradient(180deg, #f16b15 33%, #efd417);
+  --shadow: 3px 3px 8px 1px #6b4b09;
+  --bgImage: linear-gradient(45deg, #f16b158c 33%, #efd417c4);
+}
+
+.night {
+  --colour: #fff;
+  --bg: linear-gradient(360deg, #00107be6 17%, #0037ff 42%, #1da1dcd1 64%);
+  --shadow: 2px 2px 7px 1px black;
+  --bgImage: linear-gradient(45deg, #00107bc4 17%, #0037ffc9 42%, #1da1dcc2 64%);
+}
+
+.morning {
+  background-color: #ffc3009c;
+  background-image: url(images/morning.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+}
+
+.night_pic {
+  background-color: #090331;
+  background-image: url(images/night.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  height: 75vh;
+}
+
+p {
+  margin: 0;
+}
+
+.left {
+  width: 35%;
+  height: 75%;
+  border: solid;
+  border-width: thin;
+  border-radius: 2em;
+  padding: 20px;
+  background-image: var(--bgImage);
+}
+
+.upper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.icon {
+  height: 50%;
+  margin-top: 4rem;
+}
+
+.right-elem {
+  width: 50%;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.elem_box {
+  width: 72%;
+  height: 43%;
+  margin: 10% auto;
+  border-width: thin;
+  background-image: var(--bg);
+  box-shadow: var(--shadow);
+  color: var(--colour);
+}
+
+.lower {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.l_box {
+  width: 30%;
+  padding: 1em 0;
+  border-width: thin;
+  background-image: var(--bg);
+  color: var(--colour);
+  box-shadow: var(--shadow);
+}
+
+.right {
+  width: 45%;
+  padding: 5px 20px;
+  margin-top: 25px;
+}
+
+.r_post {
+  margin-top: 3px;
+}
+
+.r_div {
+  border: solid;
+  border-width: thin;
+  border-radius: 2em;
+  padding: 10px;
+  margin: 0px auto 5px;
+  background-image: var(--bg);
+  color: var(--colour);
+  box-shadow: var(--shadow);
+}
+
+h4, h5 {
+  color: var(--colour);
+  text-align: center;
+}
+
+.r_day {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: center;
+  color: #000;
+}
+
+span {
+  color: #13d457;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+span.f_txt {
+  color: var(--colour);
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: unset;
+}
+
+/* responsive starts */
+@media screen and (max-width:1280px) {
+  .left {
+    width: 35%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .main {
+    height: auto;
+  }
+
+  .morning {
+    height: auto;
+  }
+
+  .left {
+    width: 45%;
+    height: 75%;
+  }
+
+  .upper {
+    margin-bottom: 20px;
+  }
+
+  .m_ele {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width:960px) {
+  .elem_box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .left {
+    width: 45%;
+    height: 90%;
+  }
+
+  .right {
+    width: 50%;
+    padding: 5px 0px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .r_day {
+    border-radius: 1em;
+  }
+
+  .right {
+    width: 47%;
+    padding: 5px 0px;
+    margin-top: 0px;
+  }
+
+  .heading {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .main {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .elem_box {
+    margin: 6% auto;
+  }
+
+  .night_pic {
+    background-image: url(images/night-side.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .left {
+    width: 100%;
+    height: 75%;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .night_pic {
+    background-image: url(images/night-medium.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width:360px) {
+  p {
+    font-size: 0.8rem;
+  }
+
+  .night_pic {
+    background-image: url(images/night-small.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
